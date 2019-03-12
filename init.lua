@@ -5,7 +5,7 @@ hs.window.animationDuration = 0.25
 hyper = {"cmd", "alt"}
 hyper_app = {"cmd", "alt", "shift"}
 mash = {"ctrl", "cmd", "alt"}
-mash_bis = {"ctrl", "cmd"}
+mash_move_screen = {"ctrl", "cmd", "shift"}
 mash_app = {"ctrl", "cmd", "alt", "shift"}
 
 hs.hotkey.bind(mash, "W", function()
@@ -350,11 +350,11 @@ if spoon.WinWin then
     hs.hotkey.bind(mash, 'O', 'NorthEast Corner', function() spoon.WinWin:stash() spoon.WinWin:moveAndResize("cornerNE") end)
     hs.hotkey.bind(mash, 'U', 'SouthWest Corner', function() spoon.WinWin:stash() spoon.WinWin:moveAndResize("cornerSW") end)
     hs.hotkey.bind(mash, 'I', 'SouthEast Corner', function() spoon.WinWin:stash() spoon.WinWin:moveAndResize("cornerSE") end)
-    hs.hotkey.bind(mash_bis, 'left', 'Move to Left Monitor', function() spoon.WinWin:stash() spoon.WinWin:moveToScreen("left") end)
-    hs.hotkey.bind(mash_bis, 'right', 'Move to Right Monitor', function() spoon.WinWin:stash() spoon.WinWin:moveToScreen("right") end)
-    hs.hotkey.bind(mash_bis, 'up', 'Move to Above Monitor', function() spoon.WinWin:stash() spoon.WinWin:moveToScreen("up") end)
-    hs.hotkey.bind(mash_bis, 'down', 'Move to Below Monitor', function() spoon.WinWin:stash() spoon.WinWin:moveToScreen("down") end)
-    hs.hotkey.bind(mash_bis, 'space', 'Move to Next Monitor', function() spoon.WinWin:stash() spoon.WinWin:moveToScreen("next") end)
+    hs.hotkey.bind(mash_move_screen, 'left', 'Move to Left Monitor', function() spoon.WinWin:stash() spoon.WinWin:moveToScreen("left") end)
+    hs.hotkey.bind(mash_move_screen, 'right', 'Move to Right Monitor', function() spoon.WinWin:stash() spoon.WinWin:moveToScreen("right") end)
+    hs.hotkey.bind(mash_move_screen, 'up', 'Move to Above Monitor', function() spoon.WinWin:stash() spoon.WinWin:moveToScreen("up") end)
+    hs.hotkey.bind(mash_move_screen, 'down', 'Move to Below Monitor', function() spoon.WinWin:stash() spoon.WinWin:moveToScreen("down") end)
+    hs.hotkey.bind(mash_move_screen, 'space', 'Move to Next Monitor', function() spoon.WinWin:stash() spoon.WinWin:moveToScreen("next") end)
 
 end
 
